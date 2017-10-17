@@ -31,23 +31,22 @@ namespace FDSClock
 
         public FDSSettings(DisplayMode mode)
         {
-            ClientID = (Guid)localSettings.Values["ClientID"];
-            ZipCode = Convert.ToInt32(localSettings.Values["ZipCode"]);
-            var bounds = ApplicationView.GetForCurrentView().VisibleBounds;
-            ScreenWidth = Convert.ToInt32(bounds.Width);
-            ScreenHeight = Convert.ToInt32(bounds.Height);
-
-            if (ClientID == null)
+            try
+            {
+                ClientID = (Guid)localSettings.Values["ClientID"];
+                ZipCode = Convert.ToInt32(localSettings.Values["ZipCode"]);
+            }
+            catch (Exception ex)
             {
                 ClientID = Guid.NewGuid();
                 localSettings.Values["ClientID"] = ClientID;
-            }
-
-            if (ZipCode == -1)
-            {
                 ZipCode = 98028;
                 localSettings.Values["ZipCode"] = ZipCode;
             }
+                                    
+            var bounds = ApplicationView.GetForCurrentView().VisibleBounds;
+            ScreenWidth = Convert.ToInt32(bounds.Width);
+            ScreenHeight = Convert.ToInt32(bounds.Height);
         }
     }
 }

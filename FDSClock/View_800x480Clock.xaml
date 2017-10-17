@@ -11,19 +11,12 @@
 
         <!-- Element Positioning -->
         <Style x:Key="SettingsButton" TargetType="Button">
-            <Setter Property="Height" Value="80"/>
-            <Setter Property="Width" Value="80"/>
-        </Style>
-        <Style x:Key="SettingsIcon" TargetType="Image">
             <Setter Property="Height" Value="60"/>
             <Setter Property="Width" Value="60"/>
-            <Setter Property="HorizontalAlignment" Value="Center"/>
-            <Setter Property="VerticalAlignment" Value="Center"/>
         </Style>
-        
-        <Style x:Key="WeatherIcon" TargetType="Image">
-            <Setter Property="Height" Value="125"/>
-            <Setter Property="Width" Value="125"/>
+        <Style x:Key="SettingsIcon" TargetType="Image">
+            <Setter Property="Height" Value="40"/>
+            <Setter Property="Width" Value="40"/>
             <Setter Property="HorizontalAlignment" Value="Center"/>
             <Setter Property="VerticalAlignment" Value="Center"/>
         </Style>
@@ -41,13 +34,6 @@
             <Setter Property="VerticalAlignment" Value="Bottom"/>
             <Setter Property="Margin" Value="20,0,0,0"/>
         </Style>
-        <Style x:Key="DateShadow" TargetType="TextBlock">
-            <Setter Property="Foreground" Value="Black"/>
-            <Setter Property="FontSize" Value="125"/>
-            <Setter Property="Margin" Value="3,3,0,0"/>
-            <Setter Property="VerticalAlignment" Value="Bottom"/>
-            <Setter Property="Margin" Value="20,0,0,0"/>
-        </Style>
 
         <!-- Time -->
         <Style x:Key="TimeForeground" TargetType="TextBlock">
@@ -55,26 +41,12 @@
             <Setter Property="FontSize" Value="180"/>
             <Setter Property="HorizontalAlignment" Value="Center"/>
             <Setter Property="VerticalAlignment" Value="Center"/>
-            <Setter Property="Margin" Value="200,0,0,0"/>
-        </Style>
-        <Style x:Key="TimeShadow" TargetType="TextBlock">
-            <Setter Property="Foreground" Value="Black"/>
-            <Setter Property="FontSize" Value="470"/>
-            <Setter Property="HorizontalAlignment" Value="Right"/>
-            <Setter Property="VerticalAlignment" Value="Center"/>
-            <Setter Property="Margin" Value="3,3,0,0"/>
+            <Setter Property="Margin" Value="100,0,0,0"/>
         </Style>
 
         <Style x:Key="amPMForeground" TargetType="TextBlock">
             <Setter Property="Foreground" Value="White"/>
             <Setter Property="FontSize" Value="75"/>
-            <Setter Property="VerticalAlignment" Value="Top"/>
-            <Setter Property="HorizontalAlignment" Value="Center"/>
-        </Style>
-        <Style x:Key="amPMShadow" TargetType="TextBlock">
-            <Setter Property="Foreground" Value="Black"/>
-            <Setter Property="FontSize" Value="190"/>
-            <Setter Property="Margin" Value="3,3,0,0"/>
             <Setter Property="VerticalAlignment" Value="Top"/>
             <Setter Property="HorizontalAlignment" Value="Center"/>
         </Style>
@@ -85,29 +57,26 @@
             <Setter Property="HorizontalAlignment" Value="Center"/>
             <Setter Property="Margin" Value="0,-45,0,0"/>
         </Style>
-        <Style x:Key="SecondsShadow" TargetType="TextBlock">
-            <Setter Property="Foreground" Value="Black"/>
-            <Setter Property="FontSize" Value="270"/>
-            <Setter Property="Margin" Value="3,3,0,0"/>
-            <Setter Property="VerticalAlignment" Value="Top"/>
-            <Setter Property="HorizontalAlignment" Value="Center"/>
-        </Style>
 
         <!-- Weekday -->
         <Style x:Key="weekDayForeground" TargetType="TextBlock">
             <Setter Property="Foreground" Value="DarkOrange"/>
             <Setter Property="FontSize" Value="50"/>
             <Setter Property="HorizontalAlignment" Value="Right"/>
-            <Setter Property="Margin" Value="0,-15,120,0"/>
-        </Style>
-        <Style x:Key="weekDayShadow" TargetType="TextBlock">
-            <Setter Property="Foreground" Value="Black"/>
-            <Setter Property="FontSize" Value="120"/>
-            <Setter Property="Margin" Value="3,3,0,0"/>
-            <Setter Property="HorizontalAlignment" Value="Right"/>
+            <Setter Property="Margin" Value="0,-15,200,0"/>
         </Style>
 
         <!-- Weather -->
+        <Style x:Key="WeatherPanel" TargetType="StackPanel">
+            <Setter Property="Margin" Value="40,-10,0,0"/>
+        </Style>
+        <Style x:Key="WeatherIcon" TargetType="Image">
+            <Setter Property="Height" Value="100"/>
+            <Setter Property="Width" Value="100"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Top"/>
+            <Setter Property="Margin" Value="0,0,0,0"/>
+        </Style>
         <Style x:Key="weatherForeground" TargetType="TextBlock">
             <Setter Property="Foreground" Value="White"/>
             <Setter Property="FontSize" Value="20"/>
@@ -116,19 +85,69 @@
             <Setter Property="Foreground" Value="DarkOrange"/>
             <Setter Property="FontSize" Value="20"/>
         </Style>
-        <Style x:Key="weatherShadow" TargetType="TextBlock">
-            <Setter Property="Foreground" Value="Black"/>
-            <Setter Property="FontSize" Value="20"/>
-            <Setter Property="Margin" Value="3,3,0,0"/>
-        </Style>
         <Style x:Key="weatherIcon" TargetType="Image">
             <Setter Property="Height" Value="150"/>
             <Setter Property="Width" Value="150"/>
+            <Setter Property="Margin" Value="0,-20,0,0"/>
         </Style>
-        <Style x:Key="weatherIconShadow" TargetType="Image">
+        <Style x:Key="LoadingIcon" TargetType="Image">
             <Setter Property="Height" Value="150"/>
             <Setter Property="Width" Value="150"/>
-            <Setter Property="Margin" Value="3,3,0,0"/>
+            <Setter Property="Margin" Value="0,-20,0,0"/>
+        </Style>
+
+        <Style x:Key="WeatherText" TargetType="TextBlock">
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontSize" Value="18"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="Margin" Value="0,0,0,0"/>
+        </Style>
+        <Style x:Key="WeatherHeader" TargetType="TextBlock">
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontSize" Value="22"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="Margin" Value="0,-20,0,0"/>
+        </Style>
+        <Style x:Key="TempForeground" TargetType="TextBlock">
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontSize" Value="30"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Center" />
+        </Style>
+        <Style x:Name="TempDivider" TargetType="Rectangle">
+            <Setter Property="Fill" Value="White"/>
+            <Setter Property="Height" Value="2"/>
+            <Setter Property="Width" Value="30"/>
+        </Style>
+        <Style x:Key="TempHighlight" TargetType="TextBlock">
+            <Setter Property="Foreground" Value="DarkOrange"/>
+            <Setter Property="FontSize" Value="30"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Center" />
+        </Style>
+
+        <Style x:Key="BuildLabel" TargetType="TextBlock">
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontSize" Value="12"/>
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="VerticalAlignment" Value="Bottom" />
+            <Setter Property="Margin" Value="0,0,0,0"/>
+        </Style>
+
+        <Style x:Key="SettingsPanel" TargetType="RelativePanel">
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="Height" Value="400"/>
+            <Setter Property="Width" Value="350"/>
+            <Setter Property="Canvas.ZIndex" Value="1"/>
+        </Style>
+
+        <Style x:Key="SettingsText" TargetType="TextBlock">
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontSize" Value="25"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Center" />
         </Style>
     </Page.Resources>
 
@@ -138,7 +157,7 @@
             <GradientStop Color="Blue" Offset="0.5" />
             <GradientStop Color="Navy" Offset="0.75"/>
         </LinearGradientBrush>
-        
+
         <!--
         <LinearGradientBrush>
             <GradientStop Color="Maroon" Offset="0.25" />
@@ -161,8 +180,8 @@
         </Grid.ColumnDefinitions>
 
         <RelativePanel HorizontalAlignment="Right" VerticalAlignment="Top" Grid.Row="1" Grid.Column="1">
-            <Button x:Name="SettingsButton" Style="{StaticResource SettingsButton}" Background="Transparent">
-                <Image Style="{StaticResource SettingsIcon}" Source="Assets/Images/Gear_Light.png"/>
+            <Button x:Name="SettingsButton" Style="{StaticResource SettingsButton}" Background="Transparent" Click="SettingsButton_Click">
+                <Image x:Name="SettingsIcon" Style="{StaticResource SettingsIcon}" Source="Assets\Images\Icons\gear.svg"/>
             </Button>
         </RelativePanel>
 
@@ -173,9 +192,9 @@
                 <RowDefinition Height="2*"/>
             </Grid.RowDefinitions>
 
-            <StackPanel Orientation="Horizontal" Grid.Row="0" Grid.Column="0">
-                <TextBlock x:Name="DateBlock1" Style="{StaticResource DateHighlight}">Date</TextBlock>
-                <TextBlock x:Name="DateBlock2" Style="{StaticResource DateForeground}">Month</TextBlock>
+            <StackPanel Orientation="Horizontal" Grid.Row="0" Grid.Column="0" Margin="0,0,0,0">
+                <TextBlock x:Name="DateBlock1" Style="{StaticResource DateHighlight}" VerticalAlignment="Bottom">Date</TextBlock>
+                <TextBlock x:Name="DateBlock2" Style="{StaticResource DateForeground}" VerticalAlignment="Bottom">Month</TextBlock>
             </StackPanel>
 
             <StackPanel Orientation="Horizontal" Grid.Row="1" Grid.Column="0">
@@ -192,16 +211,84 @@
             </StackPanel>
         </Grid>
 
-        <Grid Grid.Row="2" Grid.Column="1">
+        <Grid Grid.Row="2" Grid.Column="1" Margin="0,25,0,0">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition Height=".05*"/>
+            </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition/>
                 <ColumnDefinition/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
 
-            <Image x:Name="NowWeatherIcon" Style="{StaticResource WeatherIcon}" Source="{x:Bind nowWeatherPath}" Grid.Column="0" HorizontalAlignment="Center"/>
-            <Image x:Name="TodayWeatherIcon" Style="{StaticResource WeatherIcon}" Source="{x:Bind todayWeatherPath}" Grid.Column="1" HorizontalAlignment="Center"/>
-            <Image x:Name="TomorrowWeatherIcon" Style="{StaticResource WeatherIcon}" Source="{x:Bind tomorrowWeatherPath}" Grid.Column="2" HorizontalAlignment="Center"/>
+            <!-- Current Weather -->
+            <StackPanel x:Name="CurrentWeatherPanel" Orientation="Horizontal" Grid.Column="0" Visibility="Collapsed">
+                <StackPanel Orientation="Vertical" Grid.Column="0" Style="{StaticResource WeatherPanel}">
+                    <TextBlock x:Name="CurrentWeatherText" Text="?" Style="{StaticResource WeatherText}"/>
+                    <Image x:Name="CurrentWeatherIcon" Style="{StaticResource WeatherIcon}" Source="Assets\Images\Icons\loading.svg" HorizontalAlignment="Center"/>
+                    <TextBlock Text="Now" Style="{StaticResource WeatherHeader}"/>
+                </StackPanel>
+                <TextBlock x:Name="CurrentTemp" Text="?" Style="{StaticResource TempHighlight}" HorizontalAlignment="Left" Margin="0,-20,0,0"/>
+            </StackPanel>
+
+            <!-- Today Weather -->
+            <StackPanel x:Name="TodayWeatherPanel" Orientation="Horizontal" Grid.Column="1" Margin="-60,0,0,0" HorizontalAlignment="Center" Visibility="Collapsed">
+                <StackPanel Orientation="Vertical" Grid.Column="0" Style="{StaticResource WeatherPanel}">
+                    <TextBlock x:Name="TodayWeatherText" Text="?" Style="{StaticResource WeatherText}"/>
+                    <Image x:Name="TodayWeatherIcon" Style="{StaticResource WeatherIcon}" Source="Assets\Images\Icons\loading.svg" HorizontalAlignment="Center"/>
+                    <TextBlock Text="Today" Style="{StaticResource WeatherHeader}"/>
+                </StackPanel>
+                <StackPanel Orientation="Vertical" Grid.Column="1" Width="70" HorizontalAlignment="Right" Margin="0,20,0,0">
+                    <TextBlock x:Name="TodayHighTemp" Text="?" Style="{StaticResource TempHighlight}" HorizontalAlignment="Center" Margin="-40,0,0,0"/>
+                    <Rectangle x:Name="TodayTempDivider" Style="{StaticResource TempDivider}" Margin="-50,0,0,0"/>
+                    <TextBlock x:Name="TodayLowTemp" Text="?" Style="{StaticResource TempForeground}" HorizontalAlignment="Center" Margin="-40,0,0,0"/>
+                </StackPanel>
+            </StackPanel>
+
+            <!-- Tomorrow Weather -->
+            <StackPanel x:Name="TomorrowWeatherPanel" Orientation="Horizontal" Grid.Column="2" Margin="-60,0,0,0" HorizontalAlignment="Center" Visibility="Collapsed">
+                <StackPanel Orientation="Vertical" Grid.Column="0" Style="{StaticResource WeatherPanel}">
+                    <TextBlock x:Name="TomorrowWeatherText" Text="?" Style="{StaticResource WeatherText}"/>
+                    <Image x:Name="TomorrowWeatherIcon" Style="{StaticResource WeatherIcon}" Source="Assets\Images\Icons\loading.svg" HorizontalAlignment="Center"/>
+                    <TextBlock Text="Tomorrow" Style="{StaticResource WeatherHeader}"/>
+                </StackPanel>
+                <StackPanel Orientation="Vertical" Grid.Column="1" Width="70" HorizontalAlignment="Right" Margin="0,20,0,0">
+                    <TextBlock x:Name="TomorrowHighTemp" Text="?" Style="{StaticResource TempHighlight}" HorizontalAlignment="Center" Margin="-40,0,0,0"/>
+                    <Rectangle x:Name="TomorrowTempDivider" Style="{StaticResource TempDivider}" Margin="-50,0,0,0"/>
+                    <TextBlock x:Name="TomorrowLowTemp" Text="?" Style="{StaticResource TempForeground}" HorizontalAlignment="Center" Margin="-40,0,0,0"/>
+                </StackPanel>
+            </StackPanel>
+            
         </Grid>
+
+        <RelativePanel x:Name="SettingsPanel" Style="{StaticResource SettingsPanel}" Visibility="Collapsed" Grid.Row="1" Grid.RowSpan="2" Grid.Column="1" Margin="0,0,0,0" Background="Gray">
+            <StackPanel Orientation="Vertical" Width="350" Margin="0,20,0,0">
+                <Grid x:Name="Settings">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="40"/>
+                        <RowDefinition Height="40"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <TextBlock Text="Settings" Style="{StaticResource SettingsText}" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Center"/>
+                    <Button x:Name="CloseButton" Background="Transparent" Grid.Column="0" Grid.Row="0" HorizontalAlignment="Right" VerticalAlignment="Top" Grid.ColumnSpan="2" Margin="0,-25,0,0" Click="CloseButton_Click" Foreground="White">
+                        X
+                        <!--<Image x:Name="SettingsIcon" Style="{StaticResource CloseIcon}" Source="Assets\Images\Icons\close.svg"/>-->
+                    </Button>
+
+                </Grid>
+            </StackPanel>
+
+            <RelativePanel HorizontalAlignment="Right"  VerticalAlignment="Bottom">
+                <TextBlock x:Name="BuildLabel" Style="{StaticResource BuildLabel}">Build</TextBlock>
+            </RelativePanel>
+            <RelativePanel HorizontalAlignment="Right" VerticalAlignment="Top" Grid.Row="1" Grid.Column="1">
+                
+            </RelativePanel>
+        </RelativePanel>
     </Grid>
 </Page>
