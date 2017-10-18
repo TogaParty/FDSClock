@@ -181,7 +181,7 @@
 
         <RelativePanel HorizontalAlignment="Right" VerticalAlignment="Top" Grid.Row="1" Grid.Column="1">
             <Button x:Name="SettingsButton" Style="{StaticResource SettingsButton}" Background="Transparent" Click="SettingsButton_Click">
-                <Image x:Name="SettingsIcon" Style="{StaticResource SettingsIcon}" Source="Assets\Images\Icons\gear.svg"/>
+                <Image x:Name="SettingsIcon" Style="{StaticResource SettingsIcon}" Source="Assets\Images\Icons\gear.svg" />
             </Button>
         </RelativePanel>
 
@@ -226,7 +226,7 @@
             <StackPanel x:Name="CurrentWeatherPanel" Orientation="Horizontal" Grid.Column="0" Visibility="Collapsed">
                 <StackPanel Orientation="Vertical" Grid.Column="0" Style="{StaticResource WeatherPanel}">
                     <TextBlock x:Name="CurrentWeatherText" Text="?" Style="{StaticResource WeatherText}"/>
-                    <Image x:Name="CurrentWeatherIcon" Style="{StaticResource WeatherIcon}" Source="Assets\Images\Icons\loading.svg" HorizontalAlignment="Center"/>
+                    <Image x:Name="CurrentWeatherIcon" Style="{StaticResource WeatherIcon}" Source="ms-appx:///Assets/Images/Icons/loading.svg" HorizontalAlignment="Center"/>
                     <TextBlock Text="Now" Style="{StaticResource WeatherHeader}"/>
                 </StackPanel>
                 <TextBlock x:Name="CurrentTemp" Text="?" Style="{StaticResource TempHighlight}" HorizontalAlignment="Left" Margin="0,-20,0,0"/>
@@ -259,7 +259,6 @@
                     <TextBlock x:Name="TomorrowLowTemp" Text="?" Style="{StaticResource TempForeground}" HorizontalAlignment="Center" Margin="-40,0,0,0"/>
                 </StackPanel>
             </StackPanel>
-            
         </Grid>
 
         <RelativePanel x:Name="SettingsPanel" Style="{StaticResource SettingsPanel}" Visibility="Collapsed" Grid.Row="1" Grid.RowSpan="2" Grid.Column="1" Margin="0,0,0,0" Background="Gray">
