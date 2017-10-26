@@ -141,8 +141,12 @@
     </Content>
     <Content Include="Assets\Images\Icons\mostlycloudy.svg" />
     <Content Include="Assets\Images\Icons\mostlysunny.svg" />
-    <Content Include="Assets\Images\Icons\overcast.svg" />
-    <Content Include="Assets\Images\Icons\partlycloudy.svg" />
+    <Content Include="Assets\Images\Icons\overcast.svg">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Assets\Images\Icons\partlycloudy.svg">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Assets\Images\Icons\partlysunny.svg" />
     <Content Include="Assets\Images\Icons\rain.svg" />
     <Content Include="Assets\Images\Icons\sleet.svg" />
