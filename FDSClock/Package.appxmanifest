@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" IgnorableNamespaces="uap mp">
+<Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" xmlns:iot="http://schemas.microsoft.com/appx/manifest/iot/windows10" IgnorableNamespaces="uap mp iot">
   <Identity Name="1962e165-599c-49e1-b48f-536bb7f2063d" Publisher="CN=DWood" Version="1.0.0.0" />
   <mp:PhoneIdentity PhoneProductId="1962e165-599c-49e1-b48f-536bb7f2063d" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
@@ -30,5 +30,6 @@
   </Applications>
   <Capabilities>
     <Capability Name="internetClient" />
+    <iot:Capability Name="systemManagement"/>
   </Capabilities>
 </Package>

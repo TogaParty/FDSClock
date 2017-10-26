@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 using System.ComponentModel;
+using System.Diagnostics;
 
 namespace FDSClock
 {
@@ -44,6 +45,7 @@ namespace FDSClock
             }
             catch (Exception ex)
             {
+                Debug.WriteLine("Error Updating UI: " + ex.Message);
                 return false;
             }
 

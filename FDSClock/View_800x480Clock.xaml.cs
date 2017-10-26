@@ -43,13 +43,11 @@ namespace FDSClock
             this.InitializeComponent();
 
             var version = typeof(App).GetTypeInfo().Assembly.GetName().Version;
-            BuildLabel.Text = version.Major + "." + version.Minor + "." + version.Build + "." + version.Revision + "." + version.MinorRevision;
+            //BuildLabel.Text = version.Major + "." + version.Minor + "." + version.Build + "." + version.Revision + "." + version.MinorRevision;
 
             weatherUnderground = new WeatherUnderground(98028, WeatherUnderground.Measurement.Imperial);
             weatherUnderground.GetCurrentWeather();
             weatherUnderground.GetTenDayWeather();
-
-            SettingsIcon.Source = new SvgImageSource(new Uri("ms-appx:///Assets/Images/Icons/Gear.svg"));
 
             DispatcherTimer clockTimer = new DispatcherTimer();
             clockTimer.Interval = TimeSpan.FromSeconds(1);
@@ -78,7 +76,7 @@ namespace FDSClock
             fdsDateTime.Update();
 
             DateBlock1.Text = fdsDateTime.DisplayDate;
-            this.DateBlock2.Text = " of " + fdsDateTime.DisplayMonth;
+            this.DateBlock2.Text = fdsDateTime.DisplayMonth;
             this.Time.Text = fdsDateTime.DisplayHour + ":" + fdsDateTime.DisplayMinute;
             this.AMPM.Text = fdsDateTime.DisplayAMPM;
             this.Seconds.Text = fdsDateTime.DisplaySecond;
@@ -100,11 +98,13 @@ namespace FDSClock
 
                 if (currentWeatherIconPath != updatedCurrentWeatherIconPath)
                 {
-                    CurrentWeatherIcon.Source = new SvgImageSource(new Uri(updatedCurrentWeatherIconPath));
+                    SvgImageSource svg = new SvgImageSource(new Uri(updatedCurrentWeatherIconPath));
+                    svg.RasterizePixelHeight = 792;
+                    svg.RasterizePixelWidth = 612;
+
+                    CurrentWeatherIcon.Source = svg;
                     currentWeatherIconPath = updatedCurrentWeatherIconPath;
                 }
-
-                CurrentWeatherPanel.Visibility = Visibility.Visible;
             }
 
             if (weatherUnderground.TenDayWeather != null)
@@ -121,18 +121,28 @@ namespace FDSClock
 
                 if (todayWeatherIconPath != updatedTodayWeatherIconPath)
                 {
-                    TodayWeatherIcon.Source = new SvgImageSource(new Uri(updatedTodayWeatherIconPath));
-                    todayWeatherIconPath = updatedTodayWeatherIconPath;
+                    SvgImageSource svg = new SvgImageSource(new Uri(updatedTodayWeatherIconPath));
+                    svg.RasterizePixelHeight = 792;
+                    svg.RasterizePixelWidth = 612;
+
+                    TodayWeatherIcon.Source = svg;
+                    todayWeatherIconPath = updatedCurrentWeatherIconPath;
                 }
 
                 if (tomorrowWeatherIconPath != updatedTomorrowWeatherIconPath)
                 {
-                    TomorrowWeatherIcon.Source = new SvgImageSource(new Uri(updatedTomorrowWeatherIconPath));
+                    SvgImageSource svg = new SvgImageSource(new Uri(updatedTomorrowWeatherIconPath));
+                    svg.RasterizePixelHeight = 792;
+                    svg.RasterizePixelWidth = 612;
+
+                    TomorrowWeatherIcon.Source = svg;
+                    tomorrowWeatherIconPath = updatedCurrentWeatherIconPath;
+
                     tomorrowWeatherIconPath = updatedTomorrowWeatherIconPath;
                 }
 
-                TodayWeatherPanel.Visibility = Visibility.Visible;
-                TomorrowWeatherPanel.Visibility = Visibility.Visible;
+                //TodayWeatherPanel.Visibility = Visibility.Visible;
+                //TomorrowWeatherPanel.Visibility = Visibility.Visible;
             }
         }
 
@@ -267,12 +277,12 @@ namespace FDSClock
 
         private void SettingsButton_Click(object sender, RoutedEventArgs e)
         {
-            this.SettingsPanel.Visibility = Visibility.Visible;
+            //this.SettingsPanel.Visibility = Visibility.Visible;
         }
 
         private void CloseButton_Click(object sender, RoutedEventArgs e)
         {
-            this.SettingsPanel.Visibility = Visibility.Collapsed;
+            //this.SettingsPanel.Visibility = Visibility.Collapsed;
         }
     }
 }

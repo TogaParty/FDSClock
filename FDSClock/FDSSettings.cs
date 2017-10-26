@@ -38,6 +38,7 @@ namespace FDSClock
             }
             catch (Exception ex)
             {
+                Debug.WriteLine("Setting client and zipcode" + ex.Message);
                 ClientID = Guid.NewGuid();
                 localSettings.Values["ClientID"] = ClientID;
                 ZipCode = 98028;

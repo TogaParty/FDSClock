@@ -11,8 +11,8 @@
     <AssemblyName>FDSClock</AssemblyName>
     <DefaultLanguage>en-US</DefaultLanguage>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
-    <TargetPlatformVersion Condition=" '$(TargetPlatformVersion)' == '' ">10.0.15063.0</TargetPlatformVersion>
-    <TargetPlatformMinVersion>10.0.14393.0</TargetPlatformMinVersion>
+    <TargetPlatformVersion Condition=" '$(TargetPlatformVersion)' == '' ">10.0.16299.0</TargetPlatformVersion>
+    <TargetPlatformMinVersion>10.0.16299.0</TargetPlatformMinVersion>
     <MinimumVisualStudioVersion>14</MinimumVisualStudioVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -95,7 +95,6 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="FDSCalendar.cs" />
     <Compile Include="FDSDateTime.cs" />
     <Compile Include="FDSSettings.cs" />
     <Compile Include="View_3820x2160ScreenSaver.xaml.cs">
@@ -124,71 +123,33 @@
   <ItemGroup>
     <Content Include="Assets\Audio\startup.wav" />
     <Content Include="Assets\Images\Icons\chanceflurries.svg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
     </Content>
-    <Content Include="Assets\Images\Icons\chancerain.svg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Assets\Images\Icons\chancesleet.svg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Assets\Images\Icons\chancesnow.svg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Assets\Images\Icons\chancetstorms.svg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Assets\Images\Icons\clear.svg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Assets\Images\Icons\overcast.svg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Assets\Images\Icons\flurries.svg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Assets\Images\Icons\fog.svg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
+    <Content Include="Assets\Images\Icons\chancerain.svg" />
+    <Content Include="Assets\Images\Icons\chancesleet.svg" />
+    <Content Include="Assets\Images\Icons\chancesnow.svg" />
+    <Content Include="Assets\Images\Icons\chancetstorms.svg" />
+    <Content Include="Assets\Images\Icons\clear.svg" />
+    <Content Include="Assets\Images\Icons\flurries.svg" />
+    <Content Include="Assets\Images\Icons\fog.svg" />
     <Content Include="Assets\Images\Icons\gear.svg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
     </Content>
-    <Content Include="Assets\Images\Icons\hazy.svg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Assets\Images\Icons\mostlycloudy.svg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Assets\Images\Icons\mostlysunny.svg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Assets\Images\Icons\partlycloudy.svg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Assets\Images\Icons\partlysunny.svg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
+    <Content Include="Assets\Images\Icons\hazy.svg" />
     <Content Include="Assets\Images\Icons\loading.svg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
     </Content>
-    <Content Include="Assets\Images\Icons\rain.svg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Assets\Images\Icons\sleet.svg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Assets\Images\Icons\snow.svg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Assets\Images\Icons\sunny.svg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Assets\Images\Icons\tstorms.svg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Assets\Images\Icons\unknown.svg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
+    <Content Include="Assets\Images\Icons\mostlycloudy.svg" />
+    <Content Include="Assets\Images\Icons\mostlysunny.svg" />
+    <Content Include="Assets\Images\Icons\overcast.svg" />
+    <Content Include="Assets\Images\Icons\partlycloudy.svg" />
+    <Content Include="Assets\Images\Icons\partlysunny.svg" />
+    <Content Include="Assets\Images\Icons\rain.svg" />
+    <Content Include="Assets\Images\Icons\sleet.svg" />
+    <Content Include="Assets\Images\Icons\snow.svg" />
+    <Content Include="Assets\Images\Icons\sunny.svg" />
+    <Content Include="Assets\Images\Icons\tstorms.svg" />
+    <Content Include="Assets\Images\Icons\unknown.svg" />
     <Content Include="Assets\LargeTile.scale-100.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
