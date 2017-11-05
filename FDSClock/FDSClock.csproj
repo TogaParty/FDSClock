@@ -124,36 +124,75 @@
     <Content Include="Assets\Audio\startup.wav" />
     <Content Include="Assets\Images\Icons\chanceflurries.svg">
       <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Assets\Images\Icons\chancerain.svg" />
-    <Content Include="Assets\Images\Icons\chancesleet.svg" />
-    <Content Include="Assets\Images\Icons\chancesnow.svg" />
-    <Content Include="Assets\Images\Icons\chancetstorms.svg" />
-    <Content Include="Assets\Images\Icons\clear.svg" />
-    <Content Include="Assets\Images\Icons\flurries.svg" />
-    <Content Include="Assets\Images\Icons\fog.svg" />
+    <Content Include="Assets\Images\Icons\chancerain.svg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Images\Icons\chancesleet.svg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Images\Icons\chancesnow.svg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Images\Icons\chancetstorms.svg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Images\Icons\clear.svg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Images\Icons\flurries.svg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Images\Icons\fog.svg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Assets\Images\Icons\gear.svg">
       <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Assets\Images\Icons\hazy.svg" />
+    <Content Include="Assets\Images\Icons\hazy.svg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Assets\Images\Icons\loading.svg">
       <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Assets\Images\Icons\mostlycloudy.svg" />
-    <Content Include="Assets\Images\Icons\mostlysunny.svg" />
+    <Content Include="Assets\Images\Icons\mostlycloudy.svg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Images\Icons\mostlysunny.svg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Assets\Images\Icons\overcast.svg">
       <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Assets\Images\Icons\partlycloudy.svg">
       <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Assets\Images\Icons\partlysunny.svg" />
-    <Content Include="Assets\Images\Icons\rain.svg" />
-    <Content Include="Assets\Images\Icons\sleet.svg" />
-    <Content Include="Assets\Images\Icons\snow.svg" />
-    <Content Include="Assets\Images\Icons\sunny.svg" />
-    <Content Include="Assets\Images\Icons\tstorms.svg" />
-    <Content Include="Assets\Images\Icons\unknown.svg" />
+    <Content Include="Assets\Images\Icons\partlysunny.svg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Images\Icons\rain.svg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Images\Icons\sleet.svg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Images\Icons\snow.svg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Images\Icons\sunny.svg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Images\Icons\tstorms.svg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Images\Icons\unknown.svg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Assets\LargeTile.scale-100.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

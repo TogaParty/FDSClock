@@ -215,6 +215,21 @@ namespace FDSClock
                         weatherPath = "ms-appx:///Assets/Images/Icons/hazey.svg";
                         break;
                     }
+                case "Ice Pellets":
+                    {
+                        weatherPath = "ms-appx:///Assets/Images/Icons/chancesnow.svg";
+                        break;
+                    }
+                case "Light Rain":
+                    {
+                        weatherPath = "ms-appx:///Assets/Images/Icons/chancerain.svg";
+                        break;
+                    }
+                case "Light Snow":
+                    {
+                        weatherPath = "ms-appx:///Assets/Images/Icons/chancesnow.svg";
+                        break;
+                    }
                 case "Mostly Cloudy":
                     {
                         weatherPath = "ms-appx:///Assets/Images/Icons/mostlycloudy.svg";
